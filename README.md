@@ -17,6 +17,18 @@ It helps users discover clothing matches (tops, bottoms, colors, and styles) in 
 
 ---
 
+## ⚠️ Project Notes / Disclaimer
+
+This is a **mini project developed by students** for learning and demonstration purposes.  
+
+- The **UI is minimal** and may lack advanced styling.  
+- Some features may be **basic or partially implemented**.  
+- There are **lots of areas for improvement**, including responsiveness, performance, and additional functionalities.  
+
+We welcome **feedback, suggestions, and contributions** to enhance the project further.
+
+---
+
 ## 🛠️ Tech Stack
 - **Frontend:** React (Vite), TailwindCSS, AntD
 - **Backend:** Node.js, Express, Nodemailer  
