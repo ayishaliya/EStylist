@@ -1,0 +1,115 @@
+/* Navbar Styling */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.main-navbar {
+  background: rgba(147, 102, 110, 0.6);
+  color: white;
+  padding: 5px 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  transition: background 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+.main-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.main-logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.main-nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.main-nav-links li {
+  padding: 6px 8px;
+  color: white;
+
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  transition: color 0.3s;
+}
+
+.main-nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.main-nav-links a:hover {
+  color: #b2959b;
+}
+.saved-fits-btn,
+.main-logout-button {
+  font-family: "Poppins", sans-serif;
+  background-color: #b2959b;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.saved-fits-btn {
+  background: transparent;
+}
+
+.saved-fits-btn:hover,
+.main-logout-button:hover {
+  background-color: #9b7d89;
+}
+
+.main-user-name {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+  .main-nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: rgba(147, 102, 110, 0.6);
+    padding: 10px 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .main-nav-links.open {
+    height: auto;
+    overflow: visible;
+  }
+
+  .main-nav-links li {
+    text-align: center;
+    padding: 12px 0;
+    font-size: 18px;
+  }
+}

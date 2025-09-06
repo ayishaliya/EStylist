@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+.about-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ead9d3;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.about-box {
+  max-width: 800px;
+  background-color: rgba(196, 169, 156, 0.9); /* Light beige */
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  color: #93666e; /* Soft mauve/pastel pink */
+  margin-bottom: 16px;
+}
+
+.about-text {
+  font-size: 15px;
+  color: ivory; /* Muted brownish shade for readability */
+  margin-bottom: 16px;
+}
+
+.about-brand {
+  font-weight: bold;
+  color: #8f6f75; /* Pastel pink accent */
+}
+
+.about-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #93666e;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.about-list {
+  font-size: 15px;
+  color: ivory; /* Muted brownish shade for readability */
+  margin-bottom: 16px;
+  padding-left: 6px;
+}
+
+.about-list li {
+  margin-bottom: 8px;
+}
+
+.about-contact {
+  color: #8f6f75;
+  font-weight: 600;
+}

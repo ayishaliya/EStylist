@@ -1,0 +1,217 @@
+/* Container Styling */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.saved-outfits-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 20px;
+  max-width: 100vw;
+  height: 100vh;
+  margin: 150px; /* Add margin to prevent header overlap */
+  color: #333;
+  line-height: 1.6;
+}
+
+.outfit-descriptions {
+  font-size: 18px;
+  color: #666;
+  margin-top: 15px;
+  line-height: 1.3; /* Improved readability */
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 4px solid #f3c2c2;
+  border-top: 4px solid #b67b7b;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Header Styling */
+.saved-outfits-container h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #444;
+  margin-bottom: 30px;
+  margin-top: 120px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Outfit Set Container */
+.outfit-set {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.outfit-set:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Outfit Title */
+.outfit-set h3 {
+  font-size: 22px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Outfit Images Container */
+.outfit-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+/* Outfit Images Styling */
+.outfit-images img {
+  width: 300px; /* Set a consistent width */
+  height: 350px; /* Fixed height for uniform display */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.outfit-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Description Styling */
+.outfit-set p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Empty Message */
+.saved-outfits-container p {
+  text-align: center;
+  font-size: 20px;
+  color: #888;
+}
+
+/* Outfit Header */
+.outfit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+  background: #574f5a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+
+  line-height: 30px;
+  border-radius: 10%;
+  padding-bottom: 6px;
+  transition: background 0.3s;
+  max-width: fit-content;
+}
+
+.delete-btn:hover {
+  background: rgb(42, 41, 41);
+}
+
+/* Outfit Set Container */
+.outfit-set {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative; /* Ensure the delete button is positioned inside the container */
+}
+
+/* Outfit Title */
+.outfit-set h3 {
+  font-size: 22px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .outfit-images img {
+    width: 250px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .outfit-images {
+    gap: 10px;
+  }
+
+  .outfit-images img {
+    width: 200px;
+    height: 250px;
+  }
+
+  .outfit-set {
+    padding: 15px;
+  }
+
+  .saved-outfits-container h2 {
+    font-size: 28px;
+  }
+
+  .outfit-set h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .outfit-images img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Toastify Overrides */
+.Toastify__toast {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 12px 16px;
+}
+
+.Toastify__toast--success {
+  background: #f3c2c2;
+  color: #333;
+}
+
+.Toastify__toast--error {
+  background: #b67b7b;
+  color: #fff;
+}
+
+/* Custom Empty State Styling */
+.empty-state {
+  text-align: center;
+  font-size: 20px;
+  color: #888;
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px dashed #f3c2c2;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 600px;
+}

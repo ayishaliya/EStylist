@@ -1,0 +1,157 @@
+/* Main container */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+
+/* Profile Card  */
+.profile-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 67%;
+  max-width: 700px;
+  text-align: center;
+}
+
+/* Profile Header */
+.profile-header {
+  font-size: 32px;
+  font-weight: bold;
+  color: #8f6f75;
+  margin-bottom: 50px;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 250px;
+  height: 100px;
+  background-color: gray;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Profile Details */
+.profile-details {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+/* Detail Row  */
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+  padding-right: 20px;
+}
+
+/* Label Styling */
+.detail-row span:first-child {
+  font-weight: bold;
+  color: #9d787f;
+  min-width: 120px;
+}
+
+/* Inputs & Selects */
+.detail-row input,
+.detail-row select {
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button Container */
+.button-container {
+  margin-top: 20px;
+}
+
+/* Edit & Save Buttons */
+.edit-btn,
+.profile-save-btn {
+  background-color: #8f6f75;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  width: 60px;
+}
+
+.profile-save-btn {
+  background-color: #9d787f;
+}
+
+/* Options Container - Now same width as Profile Card */
+.options-container {
+  margin-top: 20px;
+  width: 75%; /* Same width as the profile card */
+  max-width: 700px; /* Matches the profile card */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 15px;
+}
+
+/* Option Items */
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+/* Remove border from last option */
+.option:last-child {
+  border-bottom: none;
+}
+
+/* Hover effect for options */
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+/* Bold ">" Arrow Icon in Options */
+.option::after {
+  content: "❯"; /* Bold right arrow */
+  font-size: 18px;
+  font-weight: bold;
+  color: #9d787f;
+  transition: transform 0.2s;
+}
+
+/* Slight movement on hover */
+.option:hover::after {
+  transform: translateX(5px);
+}

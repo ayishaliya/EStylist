@@ -1,0 +1,132 @@
+/* Basic styling for login page */
+.login-wrapper {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  width: 300px;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #090909ec;
+}
+
+.login-form-group {
+  margin-bottom: 15px;
+}
+
+.login-form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container .login-button {
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #5d625d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.login-container .login-button:hover {
+  background-color: #202121;
+}
+
+.forgotten-password {
+  margin-top: 30px;
+  text-align: center;
+  color: #8e5976ec; /* Normal state color */
+}
+
+.forgotten-password a {
+  color: #8e5976ec; /* Normal state color */
+  text-decoration: none; /* Optional: Remove underline if needed */
+}
+
+.forgotten-password a:visited {
+  color: #8e5976ec; /* Normal state color */
+}
+
+.sign-up {
+  display: flex;
+  margin-top: 10px;
+  gap: 5px;
+  justify-content: center;
+}
+
+.sign-up a {
+  color: #8e5976ec; /* Normal state color */
+  text-decoration: none; /* Optional: Remove underline if needed */
+}
+
+.sign-up a:visited {
+  color: #8e5976ec; /* Normal state color */
+}
+
+.error {
+  color: red;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.login-inputbox-icon {
+  max-width: 30px;
+  margin-right: 8px; /* Space between icon and input */
+  color: #888; /* Optional: Adjust the icon color */
+}
+
+/* Flex container for the icon and input */
+.login-inputbox-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* Adjust the input field to take up the remaining space */
+.login-inputbox-container input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none; /* Remove default border */
+  outline: none; /* Remove outline */
+}
+.login-inputbox-container button {
+  border: none;
+  background-color: white;
+  width: 10px;
+  margin-right: 15px;
+}
+.login-inputbox-container button:hover {
+  background-color: white;
+}

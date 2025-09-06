@@ -1,0 +1,139 @@
+/* HomePage.css */
+/* Ensure background image covers the full viewport without being cut */
+.homepage-main-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh; /* Ensures full screen coverage */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("./1.jpg");
+  background-size: cover;
+  background-position: top center; /* Ensures no white space behind navbar */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.homepage-desc-container {
+  background: rgba(196, 169, 156, 0.9);
+  width: 90vw;
+  max-width: 1200px;
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.homepage-desc {
+  text-align: left;
+}
+
+.homepage-desc h1 {
+  font-size: 2.7rem;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.homepage-desc p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  color: ivory;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+.homepage-buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.homepage-button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.homepage-button-group label {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.homepage-login-button,
+.homepage-register-button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+
+.homepage-login-button {
+  background: #8f6f75;
+}
+
+.homepage-register-button {
+  background: #8f6f75;
+}
+
+.homepage-login-button a,
+.homepage-register-button a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.homepage-login-button:hover,
+.homepage-register-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.homepage-login-button:active,
+.homepage-register-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .homepage-main-container {
+    padding: 20px;
+  }
+
+  .homepage-desc h1 {
+    font-size: 2rem;
+  }
+
+  .homepage-desc p {
+    font-size: 1rem;
+  }
+
+  .homepage-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .homepage-login-button,
+  .homepage-register-button {
+    padding: 10px 25px;
+  }
+}

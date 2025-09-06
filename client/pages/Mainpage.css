@@ -1,0 +1,214 @@
+/* General Page Styling */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.h1-mainpage {
+  font-family: serif;
+  box-sizing: border-box; /* Apply border-box to h1-mainpage */
+}
+
+/* Main Container */
+.main-App {
+  width: 100vw;
+  height: 100vh;
+  background: #f4f4f4;
+  text-align: center;
+  margin-top: 350px;
+  box-sizing: border-box;
+}
+
+/* Form Container */
+.main-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  box-sizing: border-box; /* Apply border-box to .main-form-container */
+  flex-wrap: wrap;
+}
+
+.main-fields {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  box-sizing: border-box; /* Apply border-box to .main-fields */
+}
+
+.main-label {
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  color: #5a5757;
+  text-align: left;
+  box-sizing: border-box; /* Apply border-box to .main-label */
+}
+
+/* .Main-input */
+.main-input {
+  padding: 5px;
+  width: 100%;
+  max-width: 300px;
+  background-color: #ece9e9; /* Light gray background */
+  color: #000000; /* Black text */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 6px;
+  text-align: left;
+  font-size: 1.4rem;
+  outline: none; /* Removes the default blue outline */
+  box-sizing: border-box; /* Apply border-box to .main-input */
+}
+
+/* Custom styling when input is focused */
+.main-input:focus {
+  border: 1px solid #999; /* Darker gray border on focus */
+  background-color: #e0dddd; /* Slightly darker background */
+}
+
+/* Suggest Button */
+.main-button {
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background: #b78f97;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  /* Original button color */
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 20px;
+  margin-top: 25px;
+  max-width: fit-content;
+  box-sizing: border-box; /* Apply border-box to .main-button */
+}
+
+.main-button:hover {
+  background: #8f6f75;
+  transform: scale(1.05);
+}
+
+/* Success Message */
+h3 {
+  margin-top: 15px;
+  margin-left: 660px;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+  box-sizing: border-box; /* Apply border-box to h3 */
+}
+
+/* Results Section */
+.results-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  animation: fadeIn 1s ease-in-out forwards; /* Ensure animation runs once and stays */
+  opacity: 0; /* Start with opacity 0 so animation is visible */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: #8f6f75;
+  font-weight: bold;
+  animation: none; /* Override the pulse animation from h3 */
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+  color: #5a5757;
+}
+
+/* FadeIn Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); /* Start slightly below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+/* Remove conflicting h3 styles that might interfere */
+h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+  /* Remove margin-left and pulse animation if not needed elsewhere */
+}
+
+/* Save Button Styling - Matching Color Scheme */
+.save-button {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  background: #b78f97; /* Matching button color */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  max-width: fit-content;
+  max-height: 50px;
+}
+
+/* Hover and Active Effects */
+.save-button:hover {
+  background: #8f6f75; /* Darker shade on hover */
+  transform: scale(1.05);
+}
+
+.save-button:active {
+  background: #7c5b61; /* Even darker when clicked */
+  transform: scale(0.98);
+}
+
+/* Spacing and Centering */
