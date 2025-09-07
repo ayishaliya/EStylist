@@ -145,11 +145,12 @@ npm start
 
 ## ✨ Credits & Contributors
 
-- Built with ❤️ by [Ayisha Liya](https://github.com/ayishaliya)  
-- Contributors:  
-  - [Amna Villan](https://github.com/username1)  
-  - [Sneha Sudheesh](https://github.com/username2)  
-  - [Niketh Vijay](https://github.com/username3)  
+Built with ❤️ by   
+  - Contributors: 
+    - [Ayisha Liya](https://github.com/ayishaliya)
+    - [Amna Villan](https://github.com/amnavillan)  
+    - [Sneha Sudheesh](https://github.com/snehasudheesh)  
+    - [Niketh Vijay](https://github.com/Niketh-Vijay-K)  
 
 *Dataset sourced from [Kaggle - Vibrent Clothes Rental Dataset](https://www.kaggle.com/datasets/kaborg15/vibrent-clothes-rental-dataset).*
 
